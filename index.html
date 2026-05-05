@@ -1,0 +1,1974 @@
+<html lang="pt"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torneio MSS de Padel · Resultados</title>
+<meta name="description" content="Resultados, classificação e calendário do Torneio MSS de Padel — 4 a 9 de Maio 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>/* ========================
+   THEME & FOUNDATIONS
+   ======================== */
+:root {
+  /* Surface */
+  --bg: #0a0e0a;
+  --bg-soft: #121712;
+  --bg-elev: #1a221a;
+  --card: #1d2620;
+  --card-hover: #243029;
+
+  /* Text */
+  --text: #e8f0e8;
+  --text-dim: #95a99a;
+  --text-faint: #5e7062;
+
+  /* Accents */
+  --accent: #25d366;
+  --accent-bright: #2dde72;
+  --accent-dark: #128c44;
+  --accent-glow: rgba(37, 211, 102, 0.15);
+
+  --gold: #f4c430;
+  --gold-soft: rgba(244, 196, 48, 0.12);
+  --silver: #b8c4cc;
+  --silver-soft: rgba(184, 196, 204, 0.12);
+
+  /* Status */
+  --warning: #ffb547;
+  --danger: #ff6b6b;
+  --info: #5dade2;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-accent: rgba(37, 211, 102, 0.3);
+
+  /* Radii */
+  --r-sm: 8px;
+  --r: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.15);
+  --shadow-modal: 0 20px 50px rgba(0,0,0,0.6), 0 0 0 1px var(--border-strong);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(37, 211, 102, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(244, 196, 48, 0.04) 0%, transparent 50%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+input, select { font-family: inherit; }
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+/* ========================
+   HEADER
+   ======================== */
+header.app-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-left { flex: 1; min-width: 280px; }
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h1.app-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+h1.app-title em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.app-subtitle {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.header-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-glow);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--border-accent);
+}
+.admin-badge::before {
+  content: '';
+  width: 8px; height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* ========================
+   BUTTONS
+   ======================== */
+.btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 9px 14px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn:hover { background: var(--card-hover); border-color: var(--border-strong); }
+.btn-primary {
+  background: var(--accent);
+  color: #062612;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+.btn-primary:hover { background: var(--accent-bright); transform: translateY(-1px); }
+.btn-ghost { background: transparent; }
+.btn-danger { color: var(--danger); border-color: rgba(255, 107, 107, 0.3); }
+.btn-danger:hover { background: rgba(255, 107, 107, 0.08); }
+.btn-sm { padding: 6px 10px; font-size: 12px; }
+
+/* ========================
+   STATS BAR
+   ======================== */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 14px 16px;
+}
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.stat-num.accent { color: var(--accent); }
+.stat-num.warn { color: var(--warning); }
+.stat-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+/* ========================
+   NAVIGATION TABS
+   ======================== */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--r);
+  padding: 8px 14px;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.tab:hover { color: var(--text); background: var(--card); }
+.tab.active {
+  background: var(--card);
+  color: var(--accent);
+  border-color: var(--border-accent);
+}
+.tab-divider {
+  width: 1px;
+  background: var(--border);
+  margin: 4px 4px;
+  flex-shrink: 0;
+}
+
+/* ========================
+   GROUP CARDS / TABLES
+   ======================== */
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 20px;
+}
+
+.group-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: linear-gradient(180deg, rgba(37,211,102,0.04) 0%, transparent 100%);
+}
+.group-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.group-name em { font-style: italic; color: var(--accent); font-weight: 500; }
+.group-meta {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.standings {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.standings thead th {
+  background: var(--bg-soft);
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+.standings thead th.team-col { text-align: left; padding-left: 16px; }
+.standings tbody td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.standings tbody tr:last-child td { border-bottom: none; }
+.standings tbody td.team-cell {
+  text-align: left;
+  padding-left: 16px;
+  font-weight: 500;
+}
+.standings tbody td.team-cell .pos {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-right: 8px;
+}
+.standings tr.qualified td.team-cell .pos {
+  background: var(--accent-glow);
+  color: var(--accent);
+  border-radius: 50%;
+}
+.standings tr.qualified td.team-cell {
+  color: var(--text);
+}
+.standings tr.first td.team-cell .pos {
+  background: var(--gold-soft);
+  color: var(--gold);
+  border-radius: 50%;
+}
+.standings .num-strong { font-weight: 700; color: var(--text); }
+.standings .num-dim { color: var(--text-dim); }
+.standings .points {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent);
+}
+
+.group-matches {
+  padding: 12px 16px 16px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-soft);
+}
+.group-matches-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ========================
+   MATCH ROW
+   ======================== */
+.match-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: var(--r-sm);
+  background: var(--bg-elev);
+  margin-bottom: 6px;
+  font-size: 13px;
+  border: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+.match-row:hover { border-color: var(--border); }
+.match-row.has-result { background: rgba(37, 211, 102, 0.04); border-color: rgba(37, 211, 102, 0.15); }
+
+.team-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.team-side.right { flex-direction: row-reverse; text-align: right; }
+.team-name {
+  font-weight: 500;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+.team-side.winner .team-name { color: var(--accent); font-weight: 700; }
+.team-side.winner::before {
+  content: '★';
+  color: var(--accent);
+  font-size: 14px;
+}
+.team-side.right.winner::before { content: ''; }
+.team-side.right.winner::after {
+  content: '★';
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.score-box {
+  display: flex;
+  gap: 4px;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  align-items: center;
+}
+.score-box .set-score {
+  background: var(--card);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 32px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--border);
+}
+.score-box .set-score sup {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-left: 1px;
+  position: relative;
+  top: -3px;
+}
+.score-box.pending .set-score {
+  background: transparent;
+  color: var(--text-faint);
+  border: 1px dashed var(--border);
+  font-weight: 400;
+}
+
+.match-meta-tag {
+  font-size: 10px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.match-action {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.edit-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 28px; height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  font-size: 13px;
+  transition: all 0.15s;
+}
+.edit-btn:hover { color: var(--accent); border-color: var(--accent); }
+.edit-btn.delete { color: var(--text-faint); }
+.edit-btn.delete:hover { color: var(--danger); border-color: var(--danger); }
+
+/* ========================
+   DAY VIEW
+   ======================== */
+.day-section { margin-bottom: 32px; }
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+  padding: 0 4px;
+}
+.day-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.day-title em { font-style: italic; color: var(--accent); font-weight: 500; }
+.day-stats {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.timeslot {
+  margin-bottom: 18px;
+}
+.timeslot-label {
+  display: inline-block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.day-match {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) auto minmax(0, 1.2fr) auto;
+  gap: 12px;
+  align-items: center;
+  background: var(--card);
+  padding: 12px 16px;
+  border-radius: var(--r);
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+  transition: all 0.15s;
+}
+.day-match:hover { border-color: var(--border-strong); }
+.day-match.has-result { border-color: rgba(37, 211, 102, 0.2); }
+
+.day-match .group-tag {
+  display: inline-block;
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.day-match .venue-tag {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+/* ========================
+   MODAL
+   ======================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: var(--card);
+  border-radius: var(--r-xl);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--shadow-modal);
+  overflow: hidden;
+  animation: modalIn 0.2s ease-out;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text);
+}
+.modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 24px;
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+.modal-close:hover { background: var(--bg-soft); color: var(--text); }
+.modal-body { padding: 20px 24px; }
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.field { margin-bottom: 14px; }
+.field-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.field-input {
+  width: 100%;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 10px 12px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.field-input:focus { border-color: var(--accent); }
+.field-input::placeholder { color: var(--text-faint); }
+
+.set-input-row {
+  display: grid;
+  grid-template-columns: 1fr 56px 16px 56px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.set-input-row .set-team {
+  font-size: 12px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.set-input-row .set-team.right { text-align: right; }
+.set-input-row .vs-x { text-align: center; color: var(--text-faint); }
+.set-input-row input {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 4px;
+  border-radius: var(--r-sm);
+  outline: none;
+}
+.set-input-row input:focus { border-color: var(--accent); }
+.set-label-row {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin-top: 12px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.tb-row {
+  display: grid;
+  grid-template-columns: 1fr 56px 16px 56px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+.tb-row input {
+  text-align: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  outline: none;
+}
+.tb-row .tb-label-side { text-align: center; font-size: 10px; }
+
+.modal-info {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--info);
+  padding: 10px 14px;
+  border-radius: var(--r-sm);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.modal-info strong { color: var(--text); }
+
+/* ========================
+   FINAL PHASE
+   ======================== */
+.finals-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+.finals-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.finals-subtitle {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+.qualifier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.qualifier {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.qualifier.first { border-color: rgba(244, 196, 48, 0.4); background: rgba(244, 196, 48, 0.06); }
+.qualifier.second { border-color: rgba(184, 196, 204, 0.3); background: rgba(184, 196, 204, 0.05); }
+.qualifier.pending { opacity: 0.5; }
+.qualifier-pos {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+}
+.qualifier.first .qualifier-pos { color: var(--gold); }
+.qualifier.second .qualifier-pos { color: var(--silver); }
+.qualifier-team {
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.qualifier-team.unknown { color: var(--text-faint); font-style: italic; }
+.qualifier-group {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* ========================
+   FOOTER NOTE
+   ======================== */
+.footer-note {
+  margin-top: 40px;
+  padding: 16px 20px;
+  background: var(--card);
+  border-radius: var(--r);
+  border-left: 3px solid var(--info);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+.footer-note strong { color: var(--text); }
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+/* ========================
+   ADMIN HIDDEN
+   ======================== */
+body:not(.admin-mode) .admin-only { display: none !important; }
+body.admin-mode .non-admin-only { display: none !important; }
+
+/* ========================
+   MOBILE
+   ======================== */
+@media (max-width: 720px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .day-match {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .day-match .group-tag { grid-column: 1 / -1; }
+  .day-match .venue-tag { grid-column: 1 / -1; font-size: 10px; }
+  .match-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .match-row .score-box { grid-column: 1 / -1; justify-content: center; }
+  .match-action { grid-column: 1 / -1; justify-content: center; }
+  .team-name { font-size: 12px; }
+  .set-input-row { grid-template-columns: 1fr 50px 12px 50px 1fr; }
+  .standings { font-size: 11px; }
+  .standings thead th, .standings tbody td { padding: 6px 4px; }
+  .standings tbody td.team-cell { padding-left: 10px; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+<style>
+  /* Toast */
+  #toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--card);
+    color: var(--text);
+    padding: 12px 20px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s;
+    z-index: 200;
+  }
+  #toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body class="admin-mode">
+<div class="wrap">
+  <header class="app-header">
+    <div class="header-left">
+      <div class="eyebrow">4 a 9 Maio 2026 · Padel Club Maputo &amp; Gayle Padel Club</div>
+      <h1 class="app-title">Torneio <em>MSS</em> de Padel</h1>
+      <div class="app-subtitle">Resultados em tempo real, classificação e calendário</div>
+    </div>
+    <div class="header-right">
+      <span class="admin-badge" id="admin-badge" style="">Modo Admin</span>
+      <button class="btn btn-primary btn-sm" id="export-btn" style="">⤓ Exportar versão pública</button>
+      <button class="btn btn-sm" id="login-btn" style="display: none;">🔒 Admin</button>
+      <button class="btn btn-sm btn-ghost" id="logout-btn" style="">Sair</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab" data-tab="overview">Resumo</button>
+    <span class="tab-divider"></span>
+    <button class="tab active" data-tab="M1">M1</button>
+    <button class="tab" data-tab="M2">M2</button>
+    <button class="tab" data-tab="M3">M3</button>
+    <button class="tab" data-tab="M4">M4</button>
+    <span class="tab-divider"></span>
+    <button class="tab" data-tab="F1">F1</button>
+    <button class="tab" data-tab="F2">F2</button>
+    <span class="tab-divider"></span>
+    <button class="tab" data-tab="days">Por Dia</button>
+    <button class="tab" data-tab="finals">Fase Final</button>
+  </nav>
+
+  <main id="content"><div class="group-grid"><div class="group-card">
+      <div class="group-header">
+        <div class="group-name">M1 <em>A</em></div>
+        <div class="group-meta">2 / 6 jogos</div>
+      </div>
+      <table class="standings"><thead><tr>
+    <th class="team-col">Equipa</th>
+    <th title="Jogos">J</th>
+    <th title="Vitórias">V</th>
+    <th title="Derrotas">D</th>
+    <th title="Sets ganhos / perdidos">Sets</th>
+    <th title="Diferença de games">Dif</th>
+    <th title="Pontos">Pts</th>
+  </tr></thead><tbody><tr class="first qualified">
+      <td class="team-cell"><span class="pos">1</span>José Santos &amp; Carlos</td>
+      <td>1</td>
+      <td class="num-strong">1</td>
+      <td class="num-dim">0</td>
+      <td>2-0</td>
+      <td>+4</td>
+      <td class="points">2</td>
+    </tr><tr class="qualified">
+      <td class="team-cell"><span class="pos">2</span>Karim &amp; Tayab</td>
+      <td>1</td>
+      <td class="num-strong">1</td>
+      <td class="num-dim">0</td>
+      <td>2-1</td>
+      <td>+0</td>
+      <td class="points">2</td>
+    </tr><tr class="">
+      <td class="team-cell"><span class="pos">3</span>Faisal &amp; Thabani</td>
+      <td>1</td>
+      <td class="num-strong">0</td>
+      <td class="num-dim">1</td>
+      <td>1-2</td>
+      <td>+0</td>
+      <td class="points">0</td>
+    </tr><tr class="">
+      <td class="team-cell"><span class="pos">4</span>João Alberty &amp; Manel Alberty</td>
+      <td>1</td>
+      <td class="num-strong">0</td>
+      <td class="num-dim">1</td>
+      <td>0-2</td>
+      <td>-4</td>
+      <td class="points">0</td>
+    </tr></tbody></table>
+      <div class="group-matches">
+        <div class="group-matches-title">Jogos do grupo</div><div style="margin-bottom:6px;">
+        <div class="match-row has-result" data-match-id="m-13">
+    <div class="team-side winner"><span class="team-name">Karim &amp; Tayab</span></div>
+    <div class="score-box"><span class="set-score">6-4</span><span class="set-score">2-6</span><span class="set-score">6-4</span></div>
+    <div class="team-side right "><span class="team-name">Faisal &amp; Thabani</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-13" title="Editar resultado">✎</button>
+    <button class="edit-btn delete" data-action="delete" data-match-id="m-13" title="Apagar resultado">×</button>
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Segunda 04/05 · 20:00 - 21:30 · ATCM — Rafa Nadal
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row has-result" data-match-id="m-16">
+    <div class="team-side "><span class="team-name">João Alberty &amp; Manel Alberty</span></div>
+    <div class="score-box"><span class="set-score">5-7</span><span class="set-score">4-6</span></div>
+    <div class="team-side right winner"><span class="team-name">José Santos &amp; Carlos</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-16" title="Editar resultado">✎</button>
+    <button class="edit-btn delete" data-action="delete" data-match-id="m-16" title="Apagar resultado">×</button>
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Segunda 04/05 · 20:00 - 21:30 · ATCM — Sportage
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-35">
+    <div class="team-side "><span class="team-name">Karim &amp; Tayab</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">João Alberty &amp; Manel Alberty</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-35" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Terça 05/05 · 20:00 - 21:30 · ATCM — Tasman
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-39">
+    <div class="team-side "><span class="team-name">Faisal &amp; Thabani</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">José Santos &amp; Carlos</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-39" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Terça 05/05 · 21:30 - 23:00 · ATCM — Rafa Nadal
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-45">
+    <div class="team-side "><span class="team-name">Faisal &amp; Thabani</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">João Alberty &amp; Manel Alberty</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-45" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quarta 06/05 · 17:00 - 18:30 · ATCM — Tasman
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-57">
+    <div class="team-side "><span class="team-name">Karim &amp; Tayab</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">José Santos &amp; Carlos</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-57" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quarta 06/05 · 20:00 - 21:30 · ATCM — Sorento
+        </div>
+      </div></div></div><div class="group-card">
+      <div class="group-header">
+        <div class="group-name">M1 <em>B</em></div>
+        <div class="group-meta">1 / 6 jogos</div>
+      </div>
+      <table class="standings"><thead><tr>
+    <th class="team-col">Equipa</th>
+    <th title="Jogos">J</th>
+    <th title="Vitórias">V</th>
+    <th title="Derrotas">D</th>
+    <th title="Sets ganhos / perdidos">Sets</th>
+    <th title="Diferença de games">Dif</th>
+    <th title="Pontos">Pts</th>
+  </tr></thead><tbody><tr class="first qualified">
+      <td class="team-cell"><span class="pos">1</span>Rehan Fayaz &amp; Bruno Gaspar</td>
+      <td>1</td>
+      <td class="num-strong">1</td>
+      <td class="num-dim">0</td>
+      <td>2-0</td>
+      <td>+11</td>
+      <td class="points">2</td>
+    </tr><tr class="qualified">
+      <td class="team-cell"><span class="pos">2</span>Badru &amp; Pedro Alberty</td>
+      <td>0</td>
+      <td class="num-strong">0</td>
+      <td class="num-dim">0</td>
+      <td>0-0</td>
+      <td>+0</td>
+      <td class="points">0</td>
+    </tr><tr class="">
+      <td class="team-cell"><span class="pos">3</span>Gonçalo &amp; Catela</td>
+      <td>0</td>
+      <td class="num-strong">0</td>
+      <td class="num-dim">0</td>
+      <td>0-0</td>
+      <td>+0</td>
+      <td class="points">0</td>
+    </tr><tr class="">
+      <td class="team-cell"><span class="pos">4</span>Luís Morais &amp; Zequinha</td>
+      <td>1</td>
+      <td class="num-strong">0</td>
+      <td class="num-dim">1</td>
+      <td>0-2</td>
+      <td>-11</td>
+      <td class="points">0</td>
+    </tr></tbody></table>
+      <div class="group-matches">
+        <div class="group-matches-title">Jogos do grupo</div><div style="margin-bottom:6px;">
+        <div class="match-row has-result" data-match-id="m-19">
+    <div class="team-side winner"><span class="team-name">Rehan Fayaz &amp; Bruno Gaspar</span></div>
+    <div class="score-box"><span class="set-score">6-1</span><span class="set-score">6-0</span></div>
+    <div class="team-side right "><span class="team-name">Luís Morais &amp; Zequinha</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-19" title="Editar resultado">✎</button>
+    <button class="edit-btn delete" data-action="delete" data-match-id="m-19" title="Apagar resultado">×</button>
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Segunda 04/05 · 21:30 - 23:00 · ATCM — Sorento
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-36">
+    <div class="team-side "><span class="team-name">Badru &amp; Pedro Alberty</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">Gonçalo &amp; Catela</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-36" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Terça 05/05 · 20:00 - 21:30 · ATCM — Sorento
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-52">
+    <div class="team-side "><span class="team-name">Gonçalo &amp; Catela</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">Luís Morais &amp; Zequinha</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-52" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quarta 06/05 · 18:30 - 20:00 · ATCM — Sportage
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-61">
+    <div class="team-side "><span class="team-name">Badru &amp; Pedro Alberty</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">Rehan Fayaz &amp; Bruno Gaspar</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-61" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quarta 06/05 · 21:30 - 23:00 · ATCM — Sorento
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-67">
+    <div class="team-side "><span class="team-name">Badru &amp; Pedro Alberty</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">Luís Morais &amp; Zequinha</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-67" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quinta 07/05 · 18:30 - 20:00 · ATCM — Tasman
+        </div>
+      </div><div style="margin-bottom:6px;">
+        <div class="match-row " data-match-id="m-68">
+    <div class="team-side "><span class="team-name">Rehan Fayaz &amp; Bruno Gaspar</span></div>
+    <div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>
+    <div class="team-side right "><span class="team-name">Gonçalo &amp; Catela</span></div>
+    <div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="m-68" title="Inserir resultado">+</button>
+    
+  </div>
+  </div>
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          Quinta 07/05 · 20:00 - 21:30 · ATCM — Tasman
+        </div>
+      </div></div></div></div></main>
+
+  <div class="footer-note">
+    <strong>💡 Como funciona:</strong> Clica nos separadores (M1, M2…) para veres os grupos e classificação de cada escalão.
+    A coluna <strong>Pts</strong> dá 2 pontos por vitória. Critérios de desempate: 1º Vitórias · 2º Diferença de sets · 3º Diferença de games · 4º Confronto directo.
+    <span class="admin-only"><br><br><strong>Modo Admin:</strong> Estás autenticado. Os resultados que registas ficam guardados <em>apenas neste navegador</em>. Quando quiseres partilhar com os jogadores, usa <strong>"Exportar versão pública"</strong> para gerar um ficheiro com os dados embutidos.</span>
+  </div>
+</div>
+
+<!-- Admin login modal -->
+<div class="modal-overlay" id="admin-modal">
+  <div class="modal" style="max-width:420px;">
+    <div class="modal-header">
+      <div class="modal-title">🔒 Acesso Administrador</div>
+      <button class="modal-close" id="admin-modal-close">×</button>
+    </div>
+    <div class="modal-body">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">Introduz a palavra-passe para activar o modo de edição.</p>
+      <div class="field">
+        <label class="field-label">Palavra-passe</label>
+        <input type="password" id="admin-pwd" class="field-input" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <div id="admin-error" style="display:none; color:var(--danger); font-size:13px; padding:8px 12px; background:rgba(255,107,107,0.08); border-radius:8px;">Palavra-passe incorrecta.</div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" id="admin-cancel">Cancelar</button>
+      <button class="btn btn-primary" id="admin-submit">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Edit match modal -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="edit-modal-title">M2 B — Segunda 04/05</div>
+      <button class="modal-close" id="edit-modal-close">×</button>
+    </div>
+    <div class="modal-body" id="edit-modal-body">
+    <div class="modal-info">
+      <strong>Feizan &amp; Izhaar</strong> vs <strong>Faizal &amp; Sherial</strong><br>
+      <span style="font-size:12px; color:var(--text-faint);">ATCM — Sportage · 21:30 - 23:00</span>
+    </div>
+    <div style="font-size:12px; color:var(--text-dim); margin-bottom:12px;">
+      Introduz os games de cada set. Para tie-break, preenche os pontos do tie-break em baixo (ex: 7-6 com tie-break 7-5 → games <strong>7</strong> vs <strong>6</strong>, tb <strong>7</strong> vs <strong>5</strong>).
+    </div>
+    <div>
+        <div class="set-label-row">Set 1</div>
+        <div class="set-input-row">
+          <span class="set-team">Feizan &amp; Izhaar</span>
+          <input type="number" min="0" max="20" data-set="0" data-side="A" value="" placeholder="-">
+          <span class="vs-x">×</span>
+          <input type="number" min="0" max="20" data-set="0" data-side="B" value="" placeholder="-">
+          <span class="set-team right">Faizal &amp; Sherial</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-label-side">tb</span>
+          <input type="number" min="0" max="30" data-set="0" data-side="tbA" value="" placeholder="-">
+          <span></span>
+          <input type="number" min="0" max="30" data-set="0" data-side="tbB" value="" placeholder="-">
+          <span class="tb-label-side">tb</span>
+        </div>
+      </div><div>
+        <div class="set-label-row">Set 2</div>
+        <div class="set-input-row">
+          <span class="set-team">Feizan &amp; Izhaar</span>
+          <input type="number" min="0" max="20" data-set="1" data-side="A" value="" placeholder="-">
+          <span class="vs-x">×</span>
+          <input type="number" min="0" max="20" data-set="1" data-side="B" value="" placeholder="-">
+          <span class="set-team right">Faizal &amp; Sherial</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-label-side">tb</span>
+          <input type="number" min="0" max="30" data-set="1" data-side="tbA" value="" placeholder="-">
+          <span></span>
+          <input type="number" min="0" max="30" data-set="1" data-side="tbB" value="" placeholder="-">
+          <span class="tb-label-side">tb</span>
+        </div>
+      </div><div>
+        <div class="set-label-row">Set 3 (opcional)</div>
+        <div class="set-input-row">
+          <span class="set-team">Feizan &amp; Izhaar</span>
+          <input type="number" min="0" max="20" data-set="2" data-side="A" value="" placeholder="-">
+          <span class="vs-x">×</span>
+          <input type="number" min="0" max="20" data-set="2" data-side="B" value="" placeholder="-">
+          <span class="set-team right">Faizal &amp; Sherial</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-label-side">tb</span>
+          <input type="number" min="0" max="30" data-set="2" data-side="tbA" value="" placeholder="-">
+          <span></span>
+          <input type="number" min="0" max="30" data-set="2" data-side="tbB" value="" placeholder="-">
+          <span class="tb-label-side">tb</span>
+        </div>
+      </div>
+  </div>
+    <div class="modal-footer">
+      <button class="btn" id="edit-cancel">Cancelar</button>
+      <button class="btn btn-primary" id="edit-save">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="">Resultado guardado ✓</div>
+
+<script>// =====================================================================
+// MSS PADEL TOURNAMENT — APP LOGIC
+// =====================================================================
+// Data is injected at {"groups": {"M1A": {"name": "M1 A", "category": "M1", "letter": "A", "teams": [{"id": "m1a-1", "name": "Karim & Tayab"}, {"id": "m1a-2", "name": "Faisal & Thabani"}, {"id": "m1a-3", "name": "João Alberty & Manel Alberty"}, {"id": "m1a-4", "name": "José Santos & Carlos"}]}, "M1B": {"name": "M1 B", "category": "M1", "letter": "B", "teams": [{"id": "m1b-1", "name": "Badru & Pedro Alberty"}, {"id": "m1b-2", "name": "Gonçalo & Catela"}, {"id": "m1b-3", "name": "Luís Morais & Zequinha"}, {"id": "m1b-4", "name": "Rehan Fayaz & Bruno Gaspar"}]}, "M2A": {"name": "M2 A", "category": "M2", "letter": "A", "teams": [{"id": "m2a-1", "name": "Vasco & Ricardo"}, {"id": "m2a-2", "name": "Filipe & Manel Lopes"}, {"id": "m2a-3", "name": "Mitha & Mohammad"}]}, "M2B": {"name": "M2 B", "category": "M2", "letter": "B", "teams": [{"id": "m2b-1", "name": "Ahmad & Abdul Rehman"}, {"id": "m2b-2", "name": "Croky & José"}, {"id": "m2b-3", "name": "Feizan & Izhaar"}, {"id": "m2b-4", "name": "Faizal & Sherial"}]}, "M3A": {"name": "M3 A", "category": "M3", "letter": "A", "teams": [{"id": "m3a-1", "name": "Salomão & Pedro"}, {"id": "m3a-2", "name": "Yasser & Luis"}, {"id": "m3a-3", "name": "Shuaib & Sahad"}, {"id": "m3a-4", "name": "Sueil & Shiraz"}]}, "M3B": {"name": "M3 B", "category": "M3", "letter": "B", "teams": [{"id": "m3b-1", "name": "Jonathan & Mestre"}, {"id": "m3b-2", "name": "Burhan & Sarfaraz"}, {"id": "m3b-3", "name": "Alexandre & Pedro"}, {"id": "m3b-4", "name": "Shezan & Ayaan"}]}, "M4A": {"name": "M4 A", "category": "M4", "letter": "A", "teams": [{"id": "m4a-1", "name": "Isidro & Elves"}, {"id": "m4a-2", "name": "Muzakir & Zayaan"}, {"id": "m4a-3", "name": "Ricardo & Marco"}, {"id": "m4a-4", "name": "Luis & Fernando"}]}, "M4B": {"name": "M4 B", "category": "M4", "letter": "B", "teams": [{"id": "m4b-1", "name": "Michel & Edson"}, {"id": "m4b-2", "name": "Paulo & Filipe"}, {"id": "m4b-3", "name": "Faheem & Mikail"}, {"id": "m4b-4", "name": "Khalil & Akil"}]}, "F1A": {"name": "F1 A", "category": "F1", "letter": "A", "teams": [{"id": "f1a-1", "name": "Narcisa & Helen"}, {"id": "f1a-2", "name": "Sheila & Sarah"}, {"id": "f1a-3", "name": "Eduarda & Tania"}, {"id": "f1a-4", "name": "Stacey & Marlou"}]}, "F1B": {"name": "F1 B", "category": "F1", "letter": "B", "teams": [{"id": "f1b-1", "name": "Ana & Marta"}, {"id": "f1b-2", "name": "Sara & Fabiana"}, {"id": "f1b-3", "name": "Layne & Lizette"}, {"id": "f1b-4", "name": "Elsa & Isabel"}]}, "F2A": {"name": "F2 A", "category": "F2", "letter": "A", "teams": [{"id": "f2a-1", "name": "Vanda & Bia"}, {"id": "f2a-2", "name": "Saira & Bethany"}, {"id": "f2a-3", "name": "Neide & Chris"}, {"id": "f2a-4", "name": "Sabina & Jiji"}]}, "F2B": {"name": "F2 B", "category": "F2", "letter": "B", "teams": [{"id": "f2b-1", "name": "Diana & Steph"}, {"id": "f2b-2", "name": "Caironice & Carmen"}, {"id": "f2b-3", "name": "Anaya & Jovie"}, {"id": "f2b-4", "name": "Bilkiss & Tamima"}]}}, "matches": [{"id": "m-1", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 1", "group": "F2A", "team1": "f2a-1", "team2": "f2a-2"}, {"id": "m-2", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 2", "group": "F2A", "team1": "f2a-3", "team2": "f2a-4"}, {"id": "m-3", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-1", "team2": "m3a-2"}, {"id": "m-4", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M2A", "team1": "m2a-1", "team2": "m2a-2"}, {"id": "m-5", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4B", "team1": "m4b-1", "team2": "m4b-2"}, {"id": "m-6", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "M4A", "team1": "m4a-1", "team2": "m4a-2"}, {"id": "m-7", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "F1A", "team1": "f1a-3", "team2": "f1a-4"}, {"id": "m-8", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-3", "team2": "f2b-4"}, {"id": "m-9", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F1B", "team1": "f1b-3", "team2": "f1b-4"}, {"id": "m-10", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1A", "team1": "f1a-1", "team2": "f1a-2"}, {"id": "m-11", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M4A", "team1": "m4a-3", "team2": "m4a-4"}, {"id": "m-12", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M4B", "team1": "m4b-3", "team2": "m4b-4"}, {"id": "m-13", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "M1A", "team1": "m1a-1", "team2": "m1a-2"}, {"id": "m-14", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-2"}, {"id": "m-15", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M2B", "team1": "m2b-1", "team2": "m2b-2"}, {"id": "m-16", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M1A", "team1": "m1a-3", "team2": "m1a-4"}, {"id": "m-17", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-3", "team2": "m3a-4"}, {"id": "m-18", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-3", "team2": "m3b-4"}, {"id": "m-19", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-4", "team2": "m1b-3"}, {"id": "m-20", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-3", "team2": "m2b-4"}, {"id": "m-21", "day": "Terça 05/05", "dayOrder": 2, "time": "09:00 - 10:30", "venue": "ATCM — Rafa Nadal", "group": "F2A", "team1": "f2a-1", "team2": "f2a-3"}, {"id": "m-22", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-1", "team2": "f2b-3"}, {"id": "m-23", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-3"}, {"id": "m-24", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4A", "team1": "m4a-1", "team2": "m4a-3"}, {"id": "m-25", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Sportage", "group": "M4A", "team1": "m4a-2", "team2": "m4a-4"}, {"id": "m-26", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "F1A", "team1": "f1a-2", "team2": "f1a-4"}, {"id": "m-27", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "F1A", "team1": "f1a-1", "team2": "f1a-3"}, {"id": "m-28", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1B", "team1": "f1b-2", "team2": "f1b-4"}, {"id": "m-29", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F2B", "team1": "f2b-2", "team2": "f2b-4"}, {"id": "m-30", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1B", "team1": "f1b-1", "team2": "f1b-3"}, {"id": "m-31", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M3A", "team1": "m3a-2", "team2": "m3a-4"}, {"id": "m-32", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M2A", "team1": "m2a-2", "team2": "m2a-3"}, {"id": "m-33", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-1", "team2": "m4b-3"}, {"id": "m-34", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-1", "team2": "m3a-3"}, {"id": "m-35", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M1A", "team1": "m1a-1", "team2": "m1a-3"}, {"id": "m-36", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-1", "team2": "m1b-2"}, {"id": "m-37", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-1", "team2": "m2b-3"}, {"id": "m-38", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-2", "team2": "m4b-4"}, {"id": "m-39", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Rafa Nadal", "group": "M1A", "team1": "m1a-2", "team2": "m1a-4"}, {"id": "m-40", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-2", "team2": "m3b-4"}, {"id": "m-41", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-2", "team2": "m2b-4"}, {"id": "m-42", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 1", "group": "F2A", "team1": "f2a-2", "team2": "f2a-3"}, {"id": "m-43", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 2", "group": "F2B", "team1": "f2b-1", "team2": "f2b-4"}, {"id": "m-44", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F2A", "team1": "f2a-1", "team2": "f2a-4"}, {"id": "m-45", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M1A", "team1": "m1a-2", "team2": "m1a-3"}, {"id": "m-46", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4B", "team1": "m4b-1", "team2": "m4b-4"}, {"id": "m-47", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "M3A", "team1": "m3a-2", "team2": "m3a-3"}, {"id": "m-48", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4A", "team1": "m4a-2", "team2": "m4a-3"}, {"id": "m-49", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1A", "team1": "f1a-2", "team2": "f1a-3"}, {"id": "m-50", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F1B", "team1": "f1b-2", "team2": "f1b-3"}, {"id": "m-51", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1B", "team1": "f1b-1", "team2": "f1b-4"}, {"id": "m-52", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M1B", "team1": "m1b-2", "team2": "m1b-3"}, {"id": "m-53", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M4A", "team1": "m4a-1", "team2": "m4a-4"}, {"id": "m-54", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 2", "group": "M3A", "team1": "m3a-1", "team2": "m3a-4"}, {"id": "m-55", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-2", "team2": "f2b-3"}, {"id": "m-56", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-4"}, {"id": "m-57", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M1A", "team1": "m1a-1", "team2": "m1a-4"}, {"id": "m-58", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-1", "team2": "m2b-4"}, {"id": "m-59", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-2", "team2": "m4b-3"}, {"id": "m-60", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-2", "team2": "m3b-3"}, {"id": "m-61", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-1", "team2": "m1b-4"}, {"id": "m-62", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-2", "team2": "m2b-3"}, {"id": "m-63", "day": "Quinta 07/05", "dayOrder": 4, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F1B", "team1": "f1b-1", "team2": "f1b-2"}, {"id": "m-64", "day": "Quinta 07/05", "dayOrder": 4, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "F2A", "team1": "f2a-2", "team2": "f2a-4"}, {"id": "m-65", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "M2A", "team1": "m2a-3", "team2": "m2a-1"}, {"id": "m-66", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1A", "team1": "f1a-1", "team2": "f1a-4"}, {"id": "m-67", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "M1B", "team1": "m1b-1", "team2": "m1b-3"}, {"id": "m-68", "day": "Quinta 07/05", "dayOrder": 4, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M1B", "team1": "m1b-4", "team2": "m1b-2"}, {"id": "m-69", "day": "Quinta 07/05", "dayOrder": 4, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-2", "team2": "f2b-1"}], "embeddedResults":{"m-1":{"sets":[[6,2,null,null],[6,4,null,null]]},"m-2":{"sets":[[6,1,null,null],[6,0,null,null]]},"m-3":{"sets":[[6,1,null,null],[1,6,null,null],[6,1,null,null]]},"m-4":{"sets":[[6,3,null,null],[7,6,7,4]]},"m-5":{"sets":[[6,2,null,null],[7,6,8,6]]},"m-6":{"sets":[[6,1,null,null],[6,2,null,null]]},"m-7":{"sets":[[2,6,null,null],[4,6,null,null]]},"m-8":{"sets":[[7,5,null,null],[2,6,null,null],[4,6,null,null]]},"m-9":{"sets":[[1,6,null,null],[6,4,null,null],[0,6,null,null]]},"m-10":{"sets":[[7,6,7,0],[2,6,null,null],[7,5,null,null]]},"m-11":{"sets":[[4,6,null,null],[5,7,null,null]]},"m-12":{"sets":[[4,6,null,null],[0,6,null,null]]},"m-13":{"sets":[[6,4,null,null],[2,6,null,null],[6,4,null,null]]},"m-14":{"sets":[[6,7,null,null],[6,1,null,null],[7,6,null,null]]},"m-15":{"sets":[[6,4,null,null],[6,3,null,null]]},"m-16":{"sets":[[5,7,null,null],[4,6,null,null]]},"m-17":{"sets":[[6,3,null,null],[4,6,null,null],[4,6,null,null]]},"m-18":{"sets":[[6,4,null,null],[6,3,null,null]]},"m-19":{"sets":[[6,1,null,null],[6,0,null,null]]},"m-20":{"sets":[[6,4,null,null],[4,6,null,null],[4,6,null,null]]}}} placeholder by the build script
+
+const DATA = {"groups": {"M1A": {"name": "M1 A", "category": "M1", "letter": "A", "teams": [{"id": "m1a-1", "name": "Karim & Tayab"}, {"id": "m1a-2", "name": "Faisal & Thabani"}, {"id": "m1a-3", "name": "João Alberty & Manel Alberty"}, {"id": "m1a-4", "name": "José Santos & Carlos"}]}, "M1B": {"name": "M1 B", "category": "M1", "letter": "B", "teams": [{"id": "m1b-1", "name": "Badru & Pedro Alberty"}, {"id": "m1b-2", "name": "Gonçalo & Catela"}, {"id": "m1b-3", "name": "Luís Morais & Zequinha"}, {"id": "m1b-4", "name": "Rehan Fayaz & Bruno Gaspar"}]}, "M2A": {"name": "M2 A", "category": "M2", "letter": "A", "teams": [{"id": "m2a-1", "name": "Vasco & Ricardo"}, {"id": "m2a-2", "name": "Filipe & Manel Lopes"}, {"id": "m2a-3", "name": "Mitha & Mohammad"}]}, "M2B": {"name": "M2 B", "category": "M2", "letter": "B", "teams": [{"id": "m2b-1", "name": "Ahmad & Abdul Rehman"}, {"id": "m2b-2", "name": "Croky & José"}, {"id": "m2b-3", "name": "Feizan & Izhaar"}, {"id": "m2b-4", "name": "Faizal & Sherial"}]}, "M3A": {"name": "M3 A", "category": "M3", "letter": "A", "teams": [{"id": "m3a-1", "name": "Salomão & Pedro"}, {"id": "m3a-2", "name": "Yasser & Luis"}, {"id": "m3a-3", "name": "Shuaib & Sahad"}, {"id": "m3a-4", "name": "Sueil & Shiraz"}]}, "M3B": {"name": "M3 B", "category": "M3", "letter": "B", "teams": [{"id": "m3b-1", "name": "Jonathan & Mestre"}, {"id": "m3b-2", "name": "Burhan & Sarfaraz"}, {"id": "m3b-3", "name": "Alexandre & Pedro"}, {"id": "m3b-4", "name": "Shezan & Ayaan"}]}, "M4A": {"name": "M4 A", "category": "M4", "letter": "A", "teams": [{"id": "m4a-1", "name": "Isidro & Elves"}, {"id": "m4a-2", "name": "Muzakir & Zayaan"}, {"id": "m4a-3", "name": "Ricardo & Marco"}, {"id": "m4a-4", "name": "Luis & Fernando"}]}, "M4B": {"name": "M4 B", "category": "M4", "letter": "B", "teams": [{"id": "m4b-1", "name": "Michel & Edson"}, {"id": "m4b-2", "name": "Paulo & Filipe"}, {"id": "m4b-3", "name": "Faheem & Mikail"}, {"id": "m4b-4", "name": "Khalil & Akil"}]}, "F1A": {"name": "F1 A", "category": "F1", "letter": "A", "teams": [{"id": "f1a-1", "name": "Narcisa & Helen"}, {"id": "f1a-2", "name": "Sheila & Sarah"}, {"id": "f1a-3", "name": "Eduarda & Tania"}, {"id": "f1a-4", "name": "Stacey & Marlou"}]}, "F1B": {"name": "F1 B", "category": "F1", "letter": "B", "teams": [{"id": "f1b-1", "name": "Ana & Marta"}, {"id": "f1b-2", "name": "Sara & Fabiana"}, {"id": "f1b-3", "name": "Layne & Lizette"}, {"id": "f1b-4", "name": "Elsa & Isabel"}]}, "F2A": {"name": "F2 A", "category": "F2", "letter": "A", "teams": [{"id": "f2a-1", "name": "Vanda & Bia"}, {"id": "f2a-2", "name": "Saira & Bethany"}, {"id": "f2a-3", "name": "Neide & Chris"}, {"id": "f2a-4", "name": "Sabina & Jiji"}]}, "F2B": {"name": "F2 B", "category": "F2", "letter": "B", "teams": [{"id": "f2b-1", "name": "Diana & Steph"}, {"id": "f2b-2", "name": "Caironice & Carmen"}, {"id": "f2b-3", "name": "Anaya & Jovie"}, {"id": "f2b-4", "name": "Bilkiss & Tamima"}]}}, "matches": [{"id": "m-1", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 1", "group": "F2A", "team1": "f2a-1", "team2": "f2a-2"}, {"id": "m-2", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 2", "group": "F2A", "team1": "f2a-3", "team2": "f2a-4"}, {"id": "m-3", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-1", "team2": "m3a-2"}, {"id": "m-4", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M2A", "team1": "m2a-1", "team2": "m2a-2"}, {"id": "m-5", "day": "Segunda 04/05", "dayOrder": 1, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4B", "team1": "m4b-1", "team2": "m4b-2"}, {"id": "m-6", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "M4A", "team1": "m4a-1", "team2": "m4a-2"}, {"id": "m-7", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "F1A", "team1": "f1a-3", "team2": "f1a-4"}, {"id": "m-8", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-3", "team2": "f2b-4"}, {"id": "m-9", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F1B", "team1": "f1b-3", "team2": "f1b-4"}, {"id": "m-10", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1A", "team1": "f1a-1", "team2": "f1a-2"}, {"id": "m-11", "day": "Segunda 04/05", "dayOrder": 1, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M4A", "team1": "m4a-3", "team2": "m4a-4"}, {"id": "m-12", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M4B", "team1": "m4b-3", "team2": "m4b-4"}, {"id": "m-13", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "M1A", "team1": "m1a-1", "team2": "m1a-2"}, {"id": "m-14", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-2"}, {"id": "m-15", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M2B", "team1": "m2b-1", "team2": "m2b-2"}, {"id": "m-16", "day": "Segunda 04/05", "dayOrder": 1, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M1A", "team1": "m1a-3", "team2": "m1a-4"}, {"id": "m-17", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-3", "team2": "m3a-4"}, {"id": "m-18", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-3", "team2": "m3b-4"}, {"id": "m-19", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-4", "team2": "m1b-3"}, {"id": "m-20", "day": "Segunda 04/05", "dayOrder": 1, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-3", "team2": "m2b-4"}, {"id": "m-21", "day": "Terça 05/05", "dayOrder": 2, "time": "09:00 - 10:30", "venue": "ATCM — Rafa Nadal", "group": "F2A", "team1": "f2a-1", "team2": "f2a-3"}, {"id": "m-22", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-1", "team2": "f2b-3"}, {"id": "m-23", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-3"}, {"id": "m-24", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4A", "team1": "m4a-1", "team2": "m4a-3"}, {"id": "m-25", "day": "Terça 05/05", "dayOrder": 2, "time": "17:00 - 18:30", "venue": "ATCM — Sportage", "group": "M4A", "team1": "m4a-2", "team2": "m4a-4"}, {"id": "m-26", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "F1A", "team1": "f1a-2", "team2": "f1a-4"}, {"id": "m-27", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "F1A", "team1": "f1a-1", "team2": "f1a-3"}, {"id": "m-28", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1B", "team1": "f1b-2", "team2": "f1b-4"}, {"id": "m-29", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F2B", "team1": "f2b-2", "team2": "f2b-4"}, {"id": "m-30", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1B", "team1": "f1b-1", "team2": "f1b-3"}, {"id": "m-31", "day": "Terça 05/05", "dayOrder": 2, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M3A", "team1": "m3a-2", "team2": "m3a-4"}, {"id": "m-32", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M2A", "team1": "m2a-2", "team2": "m2a-3"}, {"id": "m-33", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-1", "team2": "m4b-3"}, {"id": "m-34", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "M3A", "team1": "m3a-1", "team2": "m3a-3"}, {"id": "m-35", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M1A", "team1": "m1a-1", "team2": "m1a-3"}, {"id": "m-36", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-1", "team2": "m1b-2"}, {"id": "m-37", "day": "Terça 05/05", "dayOrder": 2, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-1", "team2": "m2b-3"}, {"id": "m-38", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-2", "team2": "m4b-4"}, {"id": "m-39", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Rafa Nadal", "group": "M1A", "team1": "m1a-2", "team2": "m1a-4"}, {"id": "m-40", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-2", "team2": "m3b-4"}, {"id": "m-41", "day": "Terça 05/05", "dayOrder": 2, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-2", "team2": "m2b-4"}, {"id": "m-42", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 1", "group": "F2A", "team1": "f2a-2", "team2": "f2a-3"}, {"id": "m-43", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "Gayle Padel Club — Campo 2", "group": "F2B", "team1": "f2b-1", "team2": "f2b-4"}, {"id": "m-44", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F2A", "team1": "f2a-1", "team2": "f2a-4"}, {"id": "m-45", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "M1A", "team1": "m1a-2", "team2": "m1a-3"}, {"id": "m-46", "day": "Quarta 06/05", "dayOrder": 3, "time": "17:00 - 18:30", "venue": "ATCM — Sorento", "group": "M4B", "team1": "m4b-1", "team2": "m4b-4"}, {"id": "m-47", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 1", "group": "M3A", "team1": "m3a-2", "team2": "m3a-3"}, {"id": "m-48", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4A", "team1": "m4a-2", "team2": "m4a-3"}, {"id": "m-49", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1A", "team1": "f1a-2", "team2": "f1a-3"}, {"id": "m-50", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "F1B", "team1": "f1b-2", "team2": "f1b-3"}, {"id": "m-51", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "F1B", "team1": "f1b-1", "team2": "f1b-4"}, {"id": "m-52", "day": "Quarta 06/05", "dayOrder": 3, "time": "18:30 - 20:00", "venue": "ATCM — Sportage", "group": "M1B", "team1": "m1b-2", "team2": "m1b-3"}, {"id": "m-53", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 1", "group": "M4A", "team1": "m4a-1", "team2": "m4a-4"}, {"id": "m-54", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "Gayle Padel Club — Campo 2", "group": "M3A", "team1": "m3a-1", "team2": "m3a-4"}, {"id": "m-55", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-2", "team2": "f2b-3"}, {"id": "m-56", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-1", "team2": "m3b-4"}, {"id": "m-57", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Sorento", "group": "M1A", "team1": "m1a-1", "team2": "m1a-4"}, {"id": "m-58", "day": "Quarta 06/05", "dayOrder": 3, "time": "20:00 - 21:30", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-1", "team2": "m2b-4"}, {"id": "m-59", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "Gayle Padel Club — Campo 2", "group": "M4B", "team1": "m4b-2", "team2": "m4b-3"}, {"id": "m-60", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Tasman", "group": "M3B", "team1": "m3b-2", "team2": "m3b-3"}, {"id": "m-61", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Sorento", "group": "M1B", "team1": "m1b-1", "team2": "m1b-4"}, {"id": "m-62", "day": "Quarta 06/05", "dayOrder": 3, "time": "21:30 - 23:00", "venue": "ATCM — Sportage", "group": "M2B", "team1": "m2b-2", "team2": "m2b-3"}, {"id": "m-63", "day": "Quinta 07/05", "dayOrder": 4, "time": "17:00 - 18:30", "venue": "ATCM — Rafa Nadal", "group": "F1B", "team1": "f1b-1", "team2": "f1b-2"}, {"id": "m-64", "day": "Quinta 07/05", "dayOrder": 4, "time": "17:00 - 18:30", "venue": "ATCM — Tasman", "group": "F2A", "team1": "f2a-2", "team2": "f2a-4"}, {"id": "m-65", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Sorento", "group": "M2A", "team1": "m2a-3", "team2": "m2a-1"}, {"id": "m-66", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Rafa Nadal", "group": "F1A", "team1": "f1a-1", "team2": "f1a-4"}, {"id": "m-67", "day": "Quinta 07/05", "dayOrder": 4, "time": "18:30 - 20:00", "venue": "ATCM — Tasman", "group": "M1B", "team1": "m1b-1", "team2": "m1b-3"}, {"id": "m-68", "day": "Quinta 07/05", "dayOrder": 4, "time": "20:00 - 21:30", "venue": "ATCM — Tasman", "group": "M1B", "team1": "m1b-4", "team2": "m1b-2"}, {"id": "m-69", "day": "Quinta 07/05", "dayOrder": 4, "time": "20:00 - 21:30", "venue": "ATCM — Rafa Nadal", "group": "F2B", "team1": "f2b-2", "team2": "f2b-1"}], "embeddedResults": {}};
+const ADMIN_PASSWORD_HASH = '46a0227c6f8607305fda1a41695c10ea97abebda0a5fc6367e242f841b60730c';
+const STORAGE_KEY = 'mss-padel-results-v1';
+const ADMIN_FLAG_KEY = 'mss-padel-admin-v1';
+
+// =====================================================================
+// STATE
+// =====================================================================
+let RESULTS = {}; // matchId -> { sets: [[a,b,tbA?,tbB?], ...] }
+let isAdmin = false;
+let activeTab = 'overview';
+let editingMatchId = null;
+
+// Load results: priority 1 = embedded (in DATA), 2 = localStorage
+if (DATA.embeddedResults && Object.keys(DATA.embeddedResults).length > 0) {
+  RESULTS = JSON.parse(JSON.stringify(DATA.embeddedResults));
+}
+try {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    const parsed = JSON.parse(stored);
+    // Local storage overrides embedded (admin's local copy is more recent)
+    RESULTS = { ...RESULTS, ...parsed };
+  }
+} catch(e) { console.warn('Could not load results', e); }
+
+// Restore admin status
+try {
+  if (sessionStorage.getItem(ADMIN_FLAG_KEY) === '1') {
+    isAdmin = true;
+    document.body.classList.add('admin-mode');
+  }
+} catch(e) {}
+
+// =====================================================================
+// HELPERS
+// =====================================================================
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function teamById(groupKey, teamId) {
+  const group = DATA.groups[groupKey];
+  if (!group) return null;
+  return group.teams.find(t => t.id === teamId);
+}
+
+function teamName(groupKey, teamId) {
+  const t = teamById(groupKey, teamId);
+  return t ? t.name : '?';
+}
+
+function saveResults() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(RESULTS));
+  } catch(e) { console.warn('Could not save', e); }
+}
+
+// Simple hash for password (good enough for "click-protection" — not real security)
+async function sha256(text) {
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+// =====================================================================
+// MATCH RESULT LOGIC
+// =====================================================================
+// A "set" is [teamA_games, teamB_games, teamA_tb?, teamB_tb?]
+// A match has 1-3 sets. A team wins a set normally with 6 games and 2 of margin
+// (we don't enforce this strictly — just check who has more games).
+// Match winner: whoever wins 2 sets (best of 3).
+
+function setWinner(set) {
+  const [a, b] = set;
+  if (a == null || b == null) return null;
+  if (a > b) return 'A';
+  if (b > a) return 'B';
+  return null;
+}
+
+function matchSummary(matchId) {
+  const result = RESULTS[matchId];
+  if (!result || !result.sets || result.sets.length === 0) {
+    return { hasResult: false };
+  }
+  let setsA = 0, setsB = 0;
+  let gamesA = 0, gamesB = 0;
+  for (const set of result.sets) {
+    const w = setWinner(set);
+    if (w === 'A') setsA++;
+    if (w === 'B') setsB++;
+    if (set[0] != null) gamesA += set[0];
+    if (set[1] != null) gamesB += set[1];
+  }
+  const winner = setsA > setsB ? 'A' : (setsB > setsA ? 'B' : null);
+  return { hasResult: true, sets: result.sets, setsA, setsB, gamesA, gamesB, winner };
+}
+
+// =====================================================================
+// STANDINGS COMPUTATION
+// =====================================================================
+function computeStandings(groupKey) {
+  const group = DATA.groups[groupKey];
+  const matches = DATA.matches.filter(m => m.group === groupKey);
+
+  const stats = {};
+  for (const team of group.teams) {
+    stats[team.id] = {
+      teamId: team.id,
+      teamName: team.name,
+      played: 0, wins: 0, losses: 0,
+      setsWon: 0, setsLost: 0,
+      gamesWon: 0, gamesLost: 0,
+      headToHead: {}, // opponentId -> 'W' or 'L'
+    };
+  }
+
+  for (const m of matches) {
+    const summary = matchSummary(m.id);
+    if (!summary.hasResult || !summary.winner) continue;
+    const sA = stats[m.team1];
+    const sB = stats[m.team2];
+    sA.played++; sB.played++;
+    sA.setsWon += summary.setsA; sA.setsLost += summary.setsB;
+    sB.setsWon += summary.setsB; sB.setsLost += summary.setsA;
+    sA.gamesWon += summary.gamesA; sA.gamesLost += summary.gamesB;
+    sB.gamesWon += summary.gamesB; sB.gamesLost += summary.gamesA;
+    if (summary.winner === 'A') {
+      sA.wins++; sB.losses++;
+      sA.headToHead[m.team2] = 'W'; sB.headToHead[m.team1] = 'L';
+    } else {
+      sB.wins++; sA.losses++;
+      sB.headToHead[m.team1] = 'W'; sA.headToHead[m.team2] = 'L';
+    }
+  }
+
+  // Sort with tie-breakers
+  const arr = Object.values(stats);
+  arr.sort((a, b) => {
+    // 1. Wins (desc)
+    if (b.wins !== a.wins) return b.wins - a.wins;
+    // 2. Head-to-head (only if exactly 2 teams tied with same wins, applied below recursively)
+    // 3. Set difference
+    const setDiffA = a.setsWon - a.setsLost;
+    const setDiffB = b.setsWon - b.setsLost;
+    if (setDiffB !== setDiffA) return setDiffB - setDiffA;
+    // 4. Game difference
+    const gameDiffA = a.gamesWon - a.gamesLost;
+    const gameDiffB = b.gamesWon - b.gamesLost;
+    if (gameDiffB !== gameDiffA) return gameDiffB - gameDiffA;
+    // 5. Sets won
+    if (b.setsWon !== a.setsWon) return b.setsWon - a.setsWon;
+    return a.teamName.localeCompare(b.teamName);
+  });
+
+  // Apply head-to-head as a refinement when exactly 2 teams have same wins/setDiff
+  for (let i = 0; i < arr.length - 1; i++) {
+    const a = arr[i], b = arr[i + 1];
+    if (a.wins === b.wins
+        && (a.setsWon - a.setsLost) === (b.setsWon - b.setsLost)
+        && (a.gamesWon - a.gamesLost) === (b.gamesWon - b.gamesLost)) {
+      // Use head-to-head as final tiebreaker
+      const h2h = a.headToHead[b.teamId];
+      if (h2h === 'L') {
+        // swap
+        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+      }
+    }
+  }
+
+  return arr;
+}
+
+// =====================================================================
+// RENDERING — STANDINGS TABLE
+// =====================================================================
+function renderStandings(groupKey) {
+  const standings = computeStandings(groupKey);
+  let html = `<table class="standings"><thead><tr>
+    <th class="team-col">Equipa</th>
+    <th title="Jogos">J</th>
+    <th title="Vitórias">V</th>
+    <th title="Derrotas">D</th>
+    <th title="Sets ganhos / perdidos">Sets</th>
+    <th title="Diferença de games">Dif</th>
+    <th title="Pontos">Pts</th>
+  </tr></thead><tbody>`;
+
+  standings.forEach((s, idx) => {
+    const pos = idx + 1;
+    const setDiff = s.setsWon - s.setsLost;
+    const gameDiff = s.gamesWon - s.gamesLost;
+    const points = s.wins * 2; // 2 points per win
+    const isQualified = pos <= 2;
+    const isFirst = pos === 1;
+    const cls = isFirst ? 'first qualified' : (isQualified ? 'qualified' : '');
+    html += `<tr class="${cls}">
+      <td class="team-cell"><span class="pos">${pos}</span>${escapeHtml(s.teamName)}</td>
+      <td>${s.played}</td>
+      <td class="num-strong">${s.wins}</td>
+      <td class="num-dim">${s.losses}</td>
+      <td>${s.setsWon}-${s.setsLost}</td>
+      <td>${gameDiff >= 0 ? '+' : ''}${gameDiff}</td>
+      <td class="points">${points}</td>
+    </tr>`;
+  });
+
+  html += '</tbody></table>';
+  return html;
+}
+
+// =====================================================================
+// RENDERING — MATCH ROW
+// =====================================================================
+function renderMatchRow(match, opts = {}) {
+  const summary = matchSummary(match.id);
+  const t1 = teamName(match.group, match.team1);
+  const t2 = teamName(match.group, match.team2);
+  const winner = summary.winner;
+
+  let scoreHtml = '';
+  if (summary.hasResult) {
+    scoreHtml = '<div class="score-box">';
+    for (const set of summary.sets) {
+      const [a, b, tbA, tbB] = set;
+      const tbHtml = (tbA != null || tbB != null)
+        ? `<sup>${winner === 'A' && a > b ? (tbB ?? '') : (tbA ?? '')}</sup>`
+        : '';
+      // Show score for each team's perspective; we show "A-B" then put tiebreak after the loser's score
+      const aHasTb = tbA != null;
+      const bHasTb = tbB != null;
+      scoreHtml += `<span class="set-score">${a}${aHasTb ? '<sup>'+tbA+'</sup>' : ''}-${b}${bHasTb ? '<sup>'+tbB+'</sup>' : ''}</span>`;
+    }
+    scoreHtml += '</div>';
+  } else {
+    scoreHtml = '<div class="score-box pending"><span class="set-score">-</span><span class="set-score">-</span></div>';
+  }
+
+  const w1 = winner === 'A' ? 'winner' : '';
+  const w2 = winner === 'B' ? 'winner' : '';
+
+  const editBtn = `<div class="match-action admin-only">
+    <button class="edit-btn" data-action="edit" data-match-id="${match.id}" title="${summary.hasResult ? 'Editar' : 'Inserir'} resultado">${summary.hasResult ? '✎' : '+'}</button>
+    ${summary.hasResult ? `<button class="edit-btn delete" data-action="delete" data-match-id="${match.id}" title="Apagar resultado">×</button>` : ''}
+  </div>`;
+
+  return `<div class="match-row ${summary.hasResult ? 'has-result' : ''}" data-match-id="${match.id}">
+    <div class="team-side ${w1}"><span class="team-name">${escapeHtml(t1)}</span></div>
+    ${scoreHtml}
+    <div class="team-side right ${w2}"><span class="team-name">${escapeHtml(t2)}</span></div>
+    ${editBtn}
+  </div>`;
+}
+
+// =====================================================================
+// RENDER — OVERVIEW
+// =====================================================================
+function renderOverview() {
+  const totalMatches = DATA.matches.length;
+  const playedMatches = DATA.matches.filter(m => matchSummary(m.id).hasResult).length;
+  const remaining = totalMatches - playedMatches;
+
+  const byDay = {};
+  for (const m of DATA.matches) {
+    if (!byDay[m.day]) byDay[m.day] = { played: 0, total: 0, order: m.dayOrder };
+    byDay[m.day].total++;
+    if (matchSummary(m.id).hasResult) byDay[m.day].played++;
+  }
+
+  let html = `<div class="stats-bar">
+    <div class="stat"><div class="stat-num">${totalMatches}</div><div class="stat-label">Jogos totais</div></div>
+    <div class="stat"><div class="stat-num accent">${playedMatches}</div><div class="stat-label">Jogados</div></div>
+    <div class="stat"><div class="stat-num warn">${remaining}</div><div class="stat-label">Por jogar</div></div>
+    <div class="stat"><div class="stat-num">${Object.keys(DATA.groups).length}</div><div class="stat-label">Grupos</div></div>
+  </div>`;
+
+  // Daily progress
+  html += '<h2 class="day-title" style="margin-bottom:14px;">Progresso por <em>dia</em></h2>';
+  const days = Object.keys(byDay).sort((a, b) => byDay[a].order - byDay[b].order);
+  html += '<div class="group-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:32px;">';
+  for (const d of days) {
+    const stats = byDay[d];
+    const pct = stats.total ? Math.round(100 * stats.played / stats.total) : 0;
+    html += `<div class="group-card" style="padding:16px 20px;">
+      <div class="group-name" style="font-size:18px;">${escapeHtml(d)}</div>
+      <div style="margin-top:8px; color:var(--text-dim); font-size:13px;">${stats.played} de ${stats.total} jogos · ${pct}%</div>
+      <div style="margin-top:10px; height:6px; background:var(--bg-soft); border-radius:3px; overflow:hidden;">
+        <div style="height:100%; background:var(--accent); width:${pct}%;"></div>
+      </div>
+    </div>`;
+  }
+  html += '</div>';
+
+  // Latest results
+  const latestResults = DATA.matches
+    .filter(m => matchSummary(m.id).hasResult)
+    .slice(-6)
+    .reverse();
+  if (latestResults.length > 0) {
+    html += '<h2 class="day-title" style="margin-bottom:14px;">Últimos <em>resultados</em></h2>';
+    html += '<div style="display:grid;gap:6px;">';
+    for (const m of latestResults) {
+      html += renderMatchRow(m);
+    }
+    html += '</div>';
+  } else {
+    html += '<div class="empty-state">Ainda não há resultados registados. ' +
+      (isAdmin ? 'Vai a um escalão para começar a introduzir.' : '') + '</div>';
+  }
+
+  return html;
+}
+
+// =====================================================================
+// RENDER — CATEGORY (M1, M2, M3, M4, F1, F2)
+// =====================================================================
+function renderCategory(category) {
+  const groupA = DATA.groups[category + 'A'];
+  const groupB = DATA.groups[category + 'B'];
+  if (!groupA && !groupB) return '<div class="empty-state">Categoria não encontrada.</div>';
+
+  let html = '<div class="group-grid">';
+  for (const group of [groupA, groupB].filter(Boolean)) {
+    const gkey = category + group.letter;
+    const matches = DATA.matches.filter(m => m.group === gkey)
+      .sort((a, b) => a.dayOrder - b.dayOrder || a.time.localeCompare(b.time));
+    const playedCount = matches.filter(m => matchSummary(m.id).hasResult).length;
+
+    html += `<div class="group-card">
+      <div class="group-header">
+        <div class="group-name">${escapeHtml(category)} <em>${escapeHtml(group.letter)}</em></div>
+        <div class="group-meta">${playedCount} / ${matches.length} jogos</div>
+      </div>
+      ${renderStandings(gkey)}
+      <div class="group-matches">
+        <div class="group-matches-title">Jogos do grupo</div>`;
+    for (const m of matches) {
+      html += `<div style="margin-bottom:6px;">
+        ${renderMatchRow(m)}
+        <div class="match-meta-tag" style="padding-left:12px; padding-top:2px;">
+          ${escapeHtml(m.day)} · ${escapeHtml(m.time)} · ${escapeHtml(m.venue)}
+        </div>
+      </div>`;
+    }
+    html += '</div></div>';
+  }
+  html += '</div>';
+  return html;
+}
+
+// =====================================================================
+// RENDER — DAYS
+// =====================================================================
+function renderDays() {
+  const byDay = {};
+  for (const m of DATA.matches) {
+    if (!byDay[m.day]) byDay[m.day] = { matches: [], order: m.dayOrder };
+    byDay[m.day].matches.push(m);
+  }
+  const days = Object.keys(byDay).sort((a, b) => byDay[a].order - byDay[b].order);
+
+  let html = '';
+  for (const d of days) {
+    const dayData = byDay[d];
+    const played = dayData.matches.filter(m => matchSummary(m.id).hasResult).length;
+
+    // Group by timeslot
+    const byTime = {};
+    for (const m of dayData.matches) {
+      if (!byTime[m.time]) byTime[m.time] = [];
+      byTime[m.time].push(m);
+    }
+    const times = Object.keys(byTime).sort();
+
+    html += `<section class="day-section">
+      <div class="day-header">
+        <div class="day-title">${escapeHtml(d)}</div>
+        <div class="day-stats">${played} / ${dayData.matches.length} concluídos</div>
+      </div>`;
+
+    for (const time of times) {
+      html += `<div class="timeslot">
+        <div class="timeslot-label">${escapeHtml(time)}</div>`;
+      for (const m of byTime[time]) {
+        const summary = matchSummary(m.id);
+        const t1 = teamName(m.group, m.team1);
+        const t2 = teamName(m.group, m.team2);
+        const w1 = summary.winner === 'A' ? 'winner' : '';
+        const w2 = summary.winner === 'B' ? 'winner' : '';
+
+        let scoreHtml = '';
+        if (summary.hasResult) {
+          scoreHtml = '<div class="score-box">';
+          for (const set of summary.sets) {
+            const [a, b, tbA, tbB] = set;
+            const aHasTb = tbA != null;
+            const bHasTb = tbB != null;
+            scoreHtml += `<span class="set-score">${a}${aHasTb ? '<sup>'+tbA+'</sup>' : ''}-${b}${bHasTb ? '<sup>'+tbB+'</sup>' : ''}</span>`;
+          }
+          scoreHtml += '</div>';
+        } else {
+          scoreHtml = '<div class="score-box pending"><span class="set-score">vs</span></div>';
+        }
+
+        html += `<div class="day-match ${summary.hasResult ? 'has-result' : ''}" data-match-id="${m.id}">
+          <div>
+            <span class="group-tag">${escapeHtml(DATA.groups[m.group].name)}</span><br>
+            <div class="team-side ${w1}"><span class="team-name">${escapeHtml(t1)}</span></div>
+            <div class="venue-tag">${escapeHtml(m.venue)}</div>
+          </div>
+          ${scoreHtml}
+          <div>
+            <div class="team-side right ${w2}"><span class="team-name">${escapeHtml(t2)}</span></div>
+          </div>
+          <div class="match-action admin-only">
+            <button class="edit-btn" data-action="edit" data-match-id="${m.id}" title="${summary.hasResult ? 'Editar' : 'Inserir'}">${summary.hasResult ? '✎' : '+'}</button>
+          </div>
+        </div>`;
+      }
+      html += '</div>';
+    }
+    html += '</section>';
+  }
+  return html;
+}
+
+// =====================================================================
+// RENDER — FINALS
+// =====================================================================
+function renderFinals() {
+  const categories = ['M1', 'M2', 'M3', 'M4', 'F1', 'F2'];
+  let html = `<div class="finals-section" style="border-left:3px solid var(--info);">
+    <div class="finals-title">Fase Final</div>
+    <div class="finals-subtitle">Os 1º e 2º classificados de cada grupo qualificam-se. Os jogos da fase final serão definidos durante a semana.</div>
+  </div>`;
+
+  for (const cat of categories) {
+    const groupA = DATA.groups[cat + 'A'];
+    const groupB = DATA.groups[cat + 'B'];
+    if (!groupA && !groupB) continue;
+
+    html += `<div class="finals-section">
+      <div class="finals-title">${escapeHtml(cat)} — Qualificados</div>
+      <div class="qualifier-grid">`;
+
+    for (const grp of [groupA, groupB].filter(Boolean)) {
+      const gkey = cat + grp.letter;
+      const standings = computeStandings(gkey);
+      const allMatches = DATA.matches.filter(m => m.group === gkey);
+      const playedAll = allMatches.every(m => matchSummary(m.id).hasResult);
+
+      for (let pos = 0; pos < 2; pos++) {
+        const team = standings[pos];
+        const isReady = playedAll && team && team.played > 0;
+        const teamLabel = isReady ? team.teamName : '(por definir)';
+        const cls = pos === 0 ? 'first' : 'second';
+        const pendingCls = isReady ? '' : 'pending';
+        html += `<div class="qualifier ${cls} ${pendingCls}">
+          <span class="qualifier-pos">${pos + 1}º</span>
+          <div style="flex:1; min-width:0;">
+            <div class="qualifier-group">${escapeHtml(cat)} ${escapeHtml(grp.letter)}</div>
+            <div class="qualifier-team ${isReady ? '' : 'unknown'}">${escapeHtml(teamLabel)}</div>
+          </div>
+        </div>`;
+      }
+    }
+    html += '</div></div>';
+  }
+  return html;
+}
+
+// =====================================================================
+// MAIN RENDER
+// =====================================================================
+function render() {
+  const container = document.getElementById('content');
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === activeTab));
+
+  if (activeTab === 'overview') {
+    container.innerHTML = renderOverview();
+  } else if (activeTab === 'days') {
+    container.innerHTML = renderDays();
+  } else if (activeTab === 'finals') {
+    container.innerHTML = renderFinals();
+  } else {
+    // Category tab (M1, M2, M3, M4, F1, F2)
+    container.innerHTML = renderCategory(activeTab);
+  }
+}
+
+// =====================================================================
+// MODALS — ADMIN LOGIN
+// =====================================================================
+async function tryAdminLogin(password) {
+  const hash = await sha256(password);
+  return hash === ADMIN_PASSWORD_HASH;
+}
+
+function openAdminModal() {
+  const modal = document.getElementById('admin-modal');
+  modal.classList.add('active');
+  setTimeout(() => document.getElementById('admin-pwd').focus(), 100);
+}
+function closeAdminModal() {
+  document.getElementById('admin-modal').classList.remove('active');
+  document.getElementById('admin-pwd').value = '';
+  document.getElementById('admin-error').style.display = 'none';
+}
+
+async function handleAdminLogin() {
+  const pwd = document.getElementById('admin-pwd').value;
+  const ok = await tryAdminLogin(pwd);
+  if (ok) {
+    isAdmin = true;
+    document.body.classList.add('admin-mode');
+    try { sessionStorage.setItem(ADMIN_FLAG_KEY, '1'); } catch(e) {}
+    closeAdminModal();
+    render();
+    updateAdminBadge();
+  } else {
+    document.getElementById('admin-error').style.display = 'block';
+  }
+}
+
+function logout() {
+  isAdmin = false;
+  document.body.classList.remove('admin-mode');
+  try { sessionStorage.removeItem(ADMIN_FLAG_KEY); } catch(e) {}
+  render();
+  updateAdminBadge();
+}
+
+function updateAdminBadge() {
+  // Only show admin button if URL has ?admin or already in admin mode
+  const showAdminBtn = window.location.search.includes('admin') || isAdmin;
+  document.getElementById('admin-badge').style.display = isAdmin ? '' : 'none';
+  document.getElementById('login-btn').style.display = (showAdminBtn && !isAdmin) ? '' : 'none';
+  document.getElementById('logout-btn').style.display = isAdmin ? '' : 'none';
+  document.getElementById('export-btn').style.display = isAdmin ? '' : 'none';
+}
+
+// =====================================================================
+// MODALS — EDIT MATCH
+// =====================================================================
+function openEditModal(matchId) {
+  if (!isAdmin) return;
+  const match = DATA.matches.find(m => m.id === matchId);
+  if (!match) return;
+  editingMatchId = matchId;
+
+  const t1 = teamName(match.group, match.team1);
+  const t2 = teamName(match.group, match.team2);
+
+  document.getElementById('edit-modal-title').textContent = `${DATA.groups[match.group].name} — ${match.day}`;
+
+  const existing = RESULTS[matchId] || { sets: [] };
+  const sets = existing.sets || [];
+
+  const body = document.getElementById('edit-modal-body');
+  body.innerHTML = `
+    <div class="modal-info">
+      <strong>${escapeHtml(t1)}</strong> vs <strong>${escapeHtml(t2)}</strong><br>
+      <span style="font-size:12px; color:var(--text-faint);">${escapeHtml(match.venue)} · ${escapeHtml(match.time)}</span>
+    </div>
+    <div style="font-size:12px; color:var(--text-dim); margin-bottom:12px;">
+      Introduz os games de cada set. Para tie-break, preenche os pontos do tie-break em baixo (ex: 7-6 com tie-break 7-5 → games <strong>7</strong> vs <strong>6</strong>, tb <strong>7</strong> vs <strong>5</strong>).
+    </div>
+    ${[0, 1, 2].map(i => {
+      const s = sets[i] || [null, null, null, null];
+      return `<div>
+        <div class="set-label-row">Set ${i + 1}${i === 2 ? ' (opcional)' : ''}</div>
+        <div class="set-input-row">
+          <span class="set-team">${escapeHtml(t1)}</span>
+          <input type="number" min="0" max="20" data-set="${i}" data-side="A" value="${s[0] ?? ''}" placeholder="-">
+          <span class="vs-x">×</span>
+          <input type="number" min="0" max="20" data-set="${i}" data-side="B" value="${s[1] ?? ''}" placeholder="-">
+          <span class="set-team right">${escapeHtml(t2)}</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-label-side">tb</span>
+          <input type="number" min="0" max="30" data-set="${i}" data-side="tbA" value="${s[2] ?? ''}" placeholder="-">
+          <span></span>
+          <input type="number" min="0" max="30" data-set="${i}" data-side="tbB" value="${s[3] ?? ''}" placeholder="-">
+          <span class="tb-label-side">tb</span>
+        </div>
+      </div>`;
+    }).join('')}
+  `;
+
+  document.getElementById('edit-modal').classList.add('active');
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').classList.remove('active');
+  editingMatchId = null;
+}
+
+function saveMatch() {
+  if (!editingMatchId) return;
+  const inputs = document.querySelectorAll('#edit-modal-body input');
+  const setsData = [[null, null, null, null], [null, null, null, null], [null, null, null, null]];
+  inputs.forEach(inp => {
+    const setIdx = parseInt(inp.dataset.set);
+    const side = inp.dataset.side;
+    const v = inp.value.trim();
+    const num = v === '' ? null : parseInt(v);
+    if (side === 'A') setsData[setIdx][0] = num;
+    else if (side === 'B') setsData[setIdx][1] = num;
+    else if (side === 'tbA') setsData[setIdx][2] = num;
+    else if (side === 'tbB') setsData[setIdx][3] = num;
+  });
+
+  // Filter: only keep sets where both A and B are filled
+  const validSets = setsData.filter(s => s[0] != null && s[1] != null);
+  if (validSets.length === 0) {
+    alert('Preenche pelo menos 1 set válido (games da equipa A e B).');
+    return;
+  }
+  // Validate at least 2 sets unless 1 set scenario
+  // We accept anything (admin knows what they're doing)
+
+  RESULTS[editingMatchId] = { sets: validSets };
+  saveResults();
+  closeEditModal();
+  render();
+  showToast('Resultado guardado ✓');
+}
+
+function deleteResult(matchId) {
+  if (!isAdmin) return;
+  if (!confirm('Apagar este resultado?')) return;
+  delete RESULTS[matchId];
+  saveResults();
+  render();
+  showToast('Resultado apagado');
+}
+
+// =====================================================================
+// EXPORT
+// =====================================================================
+function exportPublicHtml() {
+  // Get current page HTML
+  const html = document.documentElement.outerHTML;
+  // We want to replace embeddedResults: {} with the actual current results
+  // Find the data definition and inject embeddedResults
+  const currentResultsJson = JSON.stringify(RESULTS);
+  // Replace the embedded results placeholder
+  const newHtml = html.replace(
+    /"embeddedResults":\s*\{[^}]*\}/,
+    `"embeddedResults":${currentResultsJson}`
+  );
+
+  const blob = new Blob([newHtml], { type: 'text/html;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  const today = new Date().toISOString().slice(0, 10);
+  a.download = `Torneio_MSS_Padel_${today}.html`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('Versão pública exportada ✓');
+}
+
+// =====================================================================
+// TOAST
+// =====================================================================
+function showToast(text) {
+  const t = document.getElementById('toast');
+  t.textContent = text;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// =====================================================================
+// EVENT BINDING
+// =====================================================================
+document.addEventListener('click', (e) => {
+  const tab = e.target.closest('.tab');
+  if (tab) {
+    activeTab = tab.dataset.tab;
+    render();
+    return;
+  }
+  const editBtn = e.target.closest('[data-action="edit"]');
+  if (editBtn) { openEditModal(editBtn.dataset.matchId); return; }
+  const delBtn = e.target.closest('[data-action="delete"]');
+  if (delBtn) { deleteResult(delBtn.dataset.matchId); return; }
+});
+
+document.getElementById('login-btn').addEventListener('click', openAdminModal);
+document.getElementById('logout-btn').addEventListener('click', logout);
+document.getElementById('export-btn').addEventListener('click', exportPublicHtml);
+
+document.getElementById('admin-cancel').addEventListener('click', closeAdminModal);
+document.getElementById('admin-submit').addEventListener('click', handleAdminLogin);
+document.getElementById('admin-pwd').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') handleAdminLogin();
+});
+document.getElementById('admin-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'admin-modal') closeAdminModal();
+});
+
+document.getElementById('edit-cancel').addEventListener('click', closeEditModal);
+document.getElementById('edit-save').addEventListener('click', saveMatch);
+document.getElementById('edit-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'edit-modal') closeEditModal();
+});
+
+document.getElementById('admin-modal-close').addEventListener('click', closeAdminModal);
+document.getElementById('edit-modal-close').addEventListener('click', closeEditModal);
+
+// Initial render
+updateAdminBadge();
+render();
+
+// Auto-open admin modal if ?admin is in URL and not already authenticated
+if (window.location.search.includes('admin') && !isAdmin) {
+  setTimeout(() => openAdminModal(), 200);
+}
+</script>
+
+
+</body></html>
